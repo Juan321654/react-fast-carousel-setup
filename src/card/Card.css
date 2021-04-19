@@ -1,0 +1,92 @@
+:root {
+  --card-inner-height: 70px;
+  --card-padding: 0 10px 0 10px;
+  --card-font-color: white;
+  --card-color-dark: #A595A2;
+  --card-color-light: #FBF9F8;
+  --card-color-arrows: #8E808D;
+}
+.Card-container {
+  width: 300px;
+  color: var(--card-font-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 7px rgb(189, 189, 189);
+  background-color: var(--main-background);
+}
+/* Gallery Carousel */
+.container-upgraded {
+  padding: 20px 20px 0 20px;
+}
+
+.container-upgraded .carousel .thumbs-wrapper {
+  margin: 20px 0 0 0;
+}
+
+.container-upgraded .carousel .control-next.control-arrow:before{
+  border-left: 8px solid var(--card-color-arrows);
+}
+.container-upgraded .carousel .control-prev.control-arrow:before{
+  border-right: 8px solid var(--card-color-arrows);
+}
+.Card-container-upgraded .card_picture {
+  background-size: cover;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+/* ----------------------- */
+
+.Card-container .card_inner_top {
+  align-items: center;
+  background-color: var(--card-color-dark);
+  display: flex;
+  height: var(--card-inner-height);
+  justify-content: space-between;
+  padding: var(--card-padding);
+}
+.Card-container .card_inner_mid {
+  align-items: center;
+  background-color: var(--card-color-light);
+  color: black;
+  display: flex;
+  height: var(--card-inner-height);
+  justify-content: space-between;
+  padding: var(--card-padding);
+}
+
+.card_inner_imgs-small {
+  align-items: center;
+  background-color: var(--card-color-dark);
+  display: flex;
+  height: var(--card-inner-height);
+  justify-content: space-evenly;
+}
+
+.card_inner_imgs-small img {
+  max-width: 50px;
+}
+
+.Card-container .card_inner_bot {
+  align-items: center;
+  background-color: var(--main-background);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  height: var(--card-inner-height);
+  justify-content: space-between;
+  padding: var(--card-padding);
+}
+
+.card_inner_bot button {
+  background-color: var(--card-color-dark);
+  border: none;
+  border-radius: 5px;
+  color: var(--card-font-color);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card_inner_bot button:hover {
+  filter: brightness(70%);
+}
