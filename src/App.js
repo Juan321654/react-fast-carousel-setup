@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Carousel className="container">
+      <div>
+        <img src="http://tiv.lighting/boweryimges/accesslighting/20011MG-BRZ_RFR.jpg" alt="Lamp Front"/>
+        <p className="legend">Legend 1</p>
+      </div>
+      <div>
+        <img src="http://tiv.lighting/boweryimges/accesslighting/20290-SAT_front.jpg" alt="Lamp Front"/>
+        <p className="legend">Legend 2</p>
+      </div>
+      <div>
+        <img src="http://tiv.lighting/boweryimges/accesslighting/20030MG-BRZ_RFR_Off.jpg" alt="Lamp Front"/>
+        <p className="legend">Legend 3</p>
+      </div>
+    </Carousel>
   );
 }
 
