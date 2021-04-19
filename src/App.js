@@ -4,7 +4,8 @@ import { Carousel } from "react-responsive-carousel";
 
 function App() {
   return (
-    <Carousel className="container">
+    <div className="container">
+    <Carousel>
       <div>
         <img src="http://tiv.lighting/boweryimges/accesslighting/20011MG-BRZ_RFR.jpg" alt="Lamp Front"/>
         <p className="legend">Legend 1</p>
@@ -18,6 +19,7 @@ function App() {
         <p className="legend">Legend 3</p>
       </div>
     </Carousel>
+    </div>
   );
 }
 
